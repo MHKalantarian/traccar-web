@@ -40,6 +40,7 @@ Ext.define('Traccar.view.dialog.ReportConfigController', {
         callingPanel.eventType = eventType;
         callingPanel.chartType = this.lookupReference('chartTypeField').getValue();
         callingPanel.showMarkers = this.lookupReference('showMarkersField').getValue();
+        callingPanel.kalmanFilter = this.lookupReference('kalmanFilterField').getValue();
         callingPanel.fromDate = this.lookupReference('fromDateField').getValue();
         callingPanel.fromTime = this.lookupReference('fromTimeField').getValue();
         callingPanel.toDate = this.lookupReference('toDateField').getValue();

@@ -72,7 +72,13 @@ Ext.define('Traccar.view.dialog.ReportConfig', {
         inputValue: true,
         uncheckedValue: false,
         value: false
-    }, {
+    },{
+        xtype: 'textfield',
+        name: 'kalmanFilter',
+        reference: 'kalmanFilterField',
+        fieldLabel: 'Kalman Filter',
+        value: '1'
+    },{
         fieldLabel: Strings.reportPeriod,
         reference: 'periodField',
         xtype: 'combobox',

@@ -120,6 +120,9 @@ Ext.define('Traccar.view.ReportController', {
         if (this.showMarkers !== undefined) {
             dialog.lookupReference('showMarkersField').setValue(this.showMarkers);
         }
+        if (this.kalmanFilter !== undefined) {
+            dialog.lookupReference('kalmanFilterField').setValue(this.kalmanFilter);
+        }
         if (this.fromDate !== undefined) {
             dialog.lookupReference('fromDateField').setValue(this.fromDate);
         }
@@ -184,6 +187,7 @@ Ext.define('Traccar.view.ReportController', {
                         this.updateButtons();
                     },
                     params: {
+                        kfa: this.kalmanFilter,
                         deviceId: this.deviceId,
                         groupId: this.groupId,
                         type: this.eventType,
